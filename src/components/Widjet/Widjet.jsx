@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Section } from 'components/Widjet/Section';
 import { FeedbackOptions } from 'components/Widjet/FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
@@ -56,3 +57,11 @@ export class Widjet extends React.Component {
     );
   }
 }
+
+Widjet.propTypes = {
+  state: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }),
+};

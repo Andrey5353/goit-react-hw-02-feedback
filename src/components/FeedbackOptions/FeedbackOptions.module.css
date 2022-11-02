@@ -1,0 +1,13 @@
+.FeedbackOptions {
+  display: flex;
+  column-gap: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  column-gap: 10px;
+}
+
+button {
+  padding: 10px;
+}

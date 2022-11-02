@@ -1,11 +1,7 @@
-export const Notification = ({ message, total }) => {
+export const Notification = ({ message }) => {
   return (
-    <>
-      {total === 0 && (
-        <div>
-          <h3>{message}</h3>
-        </div>
-      )}
-    </>
+    <div>
+      <h3>{message}</h3>
+    </div>
   );
 };
